@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_profile_pic_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_profile_pic_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Welcome"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_your_email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_marginTop="50dp"
+        android:text="Your email Address: " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_email_address"
+        android:layout_toRightOf="@+id/tv_your_email_address"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:text="dummy@me.com" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="LOGOUT"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_your_email_address"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_logout"/>
+</RelativeLayout>
